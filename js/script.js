@@ -63,6 +63,27 @@ $(document).ready(function(){
     $("#choice2").text("");
     $("#choice2").append(computerchoice);
   });
+  if (userchoice === computerchoice) {
+      userscore+=0;computerscore+=0;
+  } else if (userchoice === "rock") {
+      if (computerchoice === "scissors") {
+           userscore+=1;
+      } else {
+           computerscore+=1;
+      };
+  } else if (userchoice == "paper") {
+      if (computerchoice == "rock") {
+           userscore+=1;
+      } else {
+          computerscore+1;
+      };
+  } else if (userchoice == "scissors") {
+      if (computerchoice == "paper") {
+          userscore+=1;
+      } else {
+          computerscore+=1;
+      };
+  };
 
 
 
