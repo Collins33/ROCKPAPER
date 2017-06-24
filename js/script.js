@@ -27,42 +27,6 @@ $(document).ready(function(){
   } else {
     computerchoice = "scissors";
   };
-  $("#choice1").text("");
-  $("#choice1").append(userchoice);
-  $("#choice2").text("");
-  $("#choice2").append(computerchoice);
-
-  });
-  $("#secondpic").click(function(){
-    userchoice="paper";
-    computerchoice=Math.floor((Math.random() * 9) + 1);
-    if (computerchoice <3) {
-      computerchoice = "rock";
-    } else if (computerchoice <6) {
-      computerchoice = "paper";
-    } else {
-      computerchoice = "scissors";
-    };
-    $("#choice1").text("");
-    $("#choice1").append(userchoice);
-    $("#choice2").text("");
-    $("#choice2").append(computerchoice);
-  });
-  $("#thirdpic").click(function(){
-    userchoice="scissors";
-    computerchoice=Math.floor((Math.random() * 9) + 1);
-    if (computerchoice <3) {
-      computerchoice = "rock";
-    } else if (computerchoice <6) {
-      computerchoice = "paper";
-    } else {
-      computerchoice = "scissors";
-    };
-    $("#choice1").text("");
-    $("#choice1").append(userchoice);
-    $("#choice2").text("");
-    $("#choice2").append(computerchoice);
-  });
   if (userchoice === computerchoice) {
       userscore+=0;computerscore+=0;
   } else if (userchoice === "rock") {
@@ -84,6 +48,97 @@ $(document).ready(function(){
           computerscore+=1;
       };
   };
+  $("#choice1").text("");
+  $("#choice1").append(userchoice);
+  $("#choice2").text("");
+  $("#choice2").append(computerchoice);
+  $("#playerscore").text("");
+  $("#playerscore").append(userscore);
+  $("#computerscore").text("");
+  $("#computerscore").append(computerscore);
+
+  });
+  $("#secondpic").click(function(){
+    userchoice="paper";
+    computerchoice=Math.floor((Math.random() * 9) + 1);
+    if (computerchoice <3) {
+      computerchoice = "rock";
+    } else if (computerchoice <6) {
+      computerchoice = "paper";
+    } else {
+      computerchoice = "scissors";
+    };
+    if (userchoice === computerchoice) {
+        userscore+=0;computerscore+=0;
+    } else if (userchoice === "rock") {
+        if (computerchoice === "scissors") {
+             userscore+=1;
+        } else {
+             computerscore+=1;
+        };
+    } else if (userchoice == "paper") {
+        if (computerchoice == "rock") {
+             userscore+=1;
+        } else {
+            computerscore+=1;
+        };
+    } else if (userchoice == "scissors") {
+        if (computerchoice == "paper") {
+            userscore+=1;
+        } else {
+            computerscore+=1;
+        };
+    };
+    $("#choice1").text("");
+    $("#choice1").append(userchoice);
+    $("#choice2").text("");
+    $("#choice2").append(computerchoice);
+    $("#playerscore").text("");
+    $("#playerscore").append(userscore);
+    $("#computerscore").text("");
+    $("#computerscore").append(computerscore);
+  });
+  $("#thirdpic").click(function(){
+    userchoice="scissors";
+    computerchoice=Math.floor((Math.random() * 9) + 1);
+    if (computerchoice <3) {
+      computerchoice = "rock";
+    } else if (computerchoice <6) {
+      computerchoice = "paper";
+    } else {
+      computerchoice = "scissors";
+    };
+    if (userchoice === computerchoice) {
+        userscore+=0;computerscore+=0;
+    } else if (userchoice === "rock") {
+        if (computerchoice === "scissors") {
+             userscore+=1;
+        } else {
+             computerscore+=1;
+        };
+    } else if (userchoice == "paper") {
+        if (computerchoice == "rock") {
+             userscore+=1;
+        } else {
+            computerscore+1;
+        };
+    } else if (userchoice == "scissors") {
+        if (computerchoice == "paper") {
+            userscore+=1;
+        } else {
+            computerscore+=1;
+        };
+    };
+    $("#choice1").text("");
+    $("#choice1").append(userchoice);
+    $("#choice2").text("");
+    $("#choice2").append(computerchoice);
+    $("#playerscore").text("");
+    $("#playerscore").append(userscore);
+    $("#computerscore").text("");
+    $("#computerscore").append(computerscore);
+  });
+
 
 
 
