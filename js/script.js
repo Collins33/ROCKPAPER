@@ -41,7 +41,7 @@ $(document).ready(function() {
       if (computerchoice == "rock") {
         userscore += 1;
       } else {
-        computerscore += 1;
+        computerscore +=1;
       };
     } else if (userchoice == "scissors") {
       if (computerchoice == "paper") {
@@ -81,5 +81,10 @@ $(document).ready(function() {
     results();
 
   });
+
+
+
+
+
 
 });
