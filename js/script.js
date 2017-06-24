@@ -9,6 +9,7 @@ $(document).ready(function() {
       alert("cannot play")
     }
     $("#playername").append(name);
+      window.scrollTo( 0, 2000 );
 
   });
 
