@@ -46,3 +46,8 @@
   margin-left: 40px;
   margin-right: 40px;
 }
+#score{
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center; 
+}
