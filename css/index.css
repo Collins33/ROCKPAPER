@@ -1,0 +1,21 @@
+#logo{
+  height: 100px;
+  width: 100px;
+  margin-left: 190px;
+}
+#secondrow{
+  text-align: center;
+  padding-top: 20px;
+  background-image: url("http://wallpaper-gallery.net/images/website-wallpaper/website-wallpaper-26.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-left:90px;
+  margin-right: 90px;
+  color: white;
+  font-family: 'Exo', sans-serif;
+}
+.header{
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+}
