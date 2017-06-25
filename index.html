@@ -35,18 +35,10 @@
     </div>
     <div class="row" id="rulesrow">
       <div class="col-md-4">
-        <h3>PLAYER DETAILS</h3>
-        <form id="playerinfo">
-          <div class="form-group">
-            <label>ENTER YOUR NAME</label>
-            <input type="text" class="form-control" id="name" />
-          </div>
-          <div class="form-group">
-            <label>ENTER YOUR year of birth</label>
-            <input type="number" class="form-control" id="age" />
-          </div>
-          <button class="btn" type="submit">GIVE INFO</button>
-        </form>
+        <h3>CREATOR DETAILS</h3>
+        <h4>COLLINS NJAU</h4>
+        <h4>GITHUB:collins33</h4>
+        <h4>email:collinsnjau39@gmail.com</h4>
       </div>
       <div class="col-md-8">
         <h4>RULES</h4>
@@ -56,6 +48,7 @@
           <li>CLICK ON EITHER ROCK PAPER SCISSORS PHOTO</li>
           <li><img src="http://elementarypegames.weebly.com/uploads/1/5/0/1/15014218/6869625_orig.gif" /></li>
         </ol>
+         <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#firstmodal" type="button">PROCEED</button>
       </div>
     </div>
     <div class="row" id="maingame">
@@ -64,12 +57,40 @@
       <img src="http://images.clipartpanda.com/scissors-clip-art-1388423321.png" class="well well lg gamepic" id="thirdpic"/>
 
     </div>
-    <div class="row">
+    <div class="row" id="mainresult">
       <h3>YOU CHOSE: <span id="choice1"></span></h3>
       <h3>COMPUTER CHOICE: <span id="choice2"></span></h3>
       <p id="score"><span id="playername"> </span>  <span id="playerscore"></span>  ----   <span id="computerscore"></span> computer</p>
-
     </div>
+
+    <div id="firstmodal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <h4 class="modal-title">PLAYER FORM</h4>
+          </div>
+          <div class="modal-body">
+            <h2>FILL TO REGISTER</h2>
+            <form id="playerinfo">
+              <div class="form-group">
+                <label>ENTER YOUR NAME</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="form-group">
+                <label>ENTER YOUR year of birth</label>
+                <input type="number" class="form-control" id="age" />
+              </div>
+              <button class="btn" type="submit">GIVE INFO</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </body>
 

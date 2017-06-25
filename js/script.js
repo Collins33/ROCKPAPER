@@ -8,8 +8,15 @@ $(document).ready(function() {
     if (year - age < 18) {
       alert("cannot play")
     }
-    $("#playername").append(name);
-      window.scrollTo( 0, 2000 );
+    else{
+      $("#maingame").show();
+      $("#mainresult").show();
+      $("#playername").text("");
+      $("#playername").append(name);
+
+    }
+    window.scrollTo( 0, 2000 );
+
 
   });
 

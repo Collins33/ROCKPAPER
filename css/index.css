@@ -33,6 +33,7 @@
 }
 #maingame{
   margin:40px;
+  display: none;
 }
 #firstpic{
   margin-left: 10px;
@@ -49,5 +50,8 @@
 #score{
   font-size: 30px;
   font-family: 'Dancing Script', cursive;
-  text-align: center; 
+  text-align: center;
+}
+#mainresult{
+  display: none;
 }
