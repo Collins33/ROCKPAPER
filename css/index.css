@@ -2,6 +2,7 @@
   height: 100px;
   width: 100px;
   margin-left: 190px;
+  margin-top: 20px;
 }
 #secondrow{
   text-align: center;
@@ -26,6 +27,7 @@
   border-right: inset;
   margin-top: 90px;
   margin-bottom: 90px;
+  background-color: white;
 }
 .gamepic{
   height: 250px;
@@ -85,4 +87,15 @@ background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, F
 .bodytext{
   font-family: 'Bahiana', cursive;
   font-size: 30px;
+}
+#header{
+  border-bottom: inset;
+  margin-bottom: 10px;
+  background-color: white;
+}
+body{
+  background: #283048;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
