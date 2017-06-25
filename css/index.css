@@ -28,8 +28,8 @@
   margin-bottom: 90px;
 }
 .gamepic{
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
 }
 #maingame{
   margin:40px;
@@ -40,7 +40,7 @@
   margin: 40px;
 }
 #thirdpic{
-  margin-left: 30px;
+  margin-left: 100px;
   margin: 40px;
 }
 #secondpic{
@@ -54,4 +54,5 @@
 }
 #mainresult{
   display: none;
+  text-align: center;
 }
