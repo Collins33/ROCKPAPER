@@ -13,11 +13,11 @@
   margin-left:90px;
   margin-right: 90px;
   color: white;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Frijole', cursive;
 }
 .header{
   font-size: 30px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Frijole', cursive;
 }
 #rulesrow{
   margin-left:90px;
@@ -37,11 +37,11 @@
 }
 #firstpic{
   margin-left: 10px;
-  margin: 40px;
+  margin-right: 100px;
 }
 #thirdpic{
-  margin-left: 100px;
-  margin: 40px;
+  margin-left: 190px;
+
 }
 #secondpic{
   margin-left: 40px;
@@ -49,10 +49,40 @@
 }
 #score{
   font-size: 30px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Frijole', cursive;
   text-align: center;
 }
 #mainresult{
   display: none;
   text-align: center;
+}
+#first{
+
+  margin-top: 150px;
+}
+#footer{
+  background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#second{
+  margin-top: 150px;
+}
+#third{
+  margin-top: 150px;
+}
+#footertext{
+  color: white;
+  text-align: center;
+  font-family: 'Frijole', cursive;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.pics{
+  margin-left: 500px;
+}
+.bodytext{
+  font-family: 'Bahiana', cursive;
+  font-size: 30px;
 }
