@@ -72,7 +72,7 @@
         </div>
         <div>
           <button
-            class="btn btn-info btn-lg"
+            class="btn btn-info btn-lg proceed_button"
             data-toggle="modal"
             data-target="#firstmodal"
             type="button"
@@ -81,22 +81,24 @@
           </button>
         </div>
       </div>
-      <div class="row" id="maingame">
-        <img
-          src="https://s-media-cache-ak0.pinimg.com/originals/44/0e/f1/440ef1ab91e5cbbc6fabb8171d1f705c.jpg"
-          class="well well lg gamepic"
-          id="firstpic"
-        />
-        <img
-          src="https://4.bp.blogspot.com/-g0a99Xo-GWQ/Vxjzf78S8II/AAAAAAACAEw/FZrDlrIs478Hhj-yvMDAug8ODUm-XvNfwCKgB/s0/Paper_Boat_by_MiguelP_uhd.jpg"
-          class="well well lg gamepic"
-          id="secondpic"
-        />
-        <img
-          src="http://images.clipartpanda.com/scissors-clip-art-1388423321.png"
-          class="well well lg gamepic"
-          id="thirdpic"
-        />
+      <div class="maingame_row">
+        <div class="row" id="maingame">
+          <img
+            src="https://s-media-cache-ak0.pinimg.com/originals/44/0e/f1/440ef1ab91e5cbbc6fabb8171d1f705c.jpg"
+            class="well well lg gamepic"
+            id="firstpic"
+          />
+          <img
+            src="https://4.bp.blogspot.com/-g0a99Xo-GWQ/Vxjzf78S8II/AAAAAAACAEw/FZrDlrIs478Hhj-yvMDAug8ODUm-XvNfwCKgB/s0/Paper_Boat_by_MiguelP_uhd.jpg"
+            class="well well lg gamepic"
+            id="secondpic"
+          />
+          <img
+            src="http://images.clipartpanda.com/scissors-clip-art-1388423321.png"
+            class="well well lg gamepic"
+            id="thirdpic"
+          />
+        </div>
       </div>
       <div class="row" id="mainresult">
         <h3>YOU CHOSE: <span id="choice1"></span></h3>
@@ -106,23 +108,19 @@
           <span id="computerscore"></span> computer
         </p>
       </div>
+
       <div class="row" id="footer">
         <p id="footertext">KEEP ENJOYING THE GAME</p>
-        <div class="pics">
-          <a href="https://www.tumblr.com/login"
+        <div class="footer_pics">
+          <a href="https://twitter.com/collinsnjau1"
             ><img
               src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/tumblr-64.png"
               id="first"
           /></a>
-          <a href="https://wordpress.com/"
+          <a href="https://github.com/Collins33"
             ><img
-              src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/wordpress-64.png"
+              src="https://cdn1.iconfinder.com/data/icons/social-media-vol-1-1/24/_github-512.png"
               id="second"
-          /></a>
-          <a href="https://slack.com/"
-            ><img
-              src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/slack-64.png"
-              id="third"
           /></a>
         </div>
       </div>
@@ -145,7 +143,9 @@
                   <label>ENTER YOUR year of birth</label>
                   <input type="number" class="form-control" id="age" />
                 </div>
-                <button class="btn" type="submit">GIVE INFO</button>
+                <button class="btn btn-info btn-lg" type="submit">
+                  GIVE INFO
+                </button>
               </form>
             </div>
             <div class="modal-footer">

@@ -33,21 +33,17 @@
 .gamepic {
   height: 250px;
   width: 250px;
+  cursor: pointer;
+  margin: 15px;
 }
 #maingame {
   margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.maingame_row {
   display: none;
-}
-#firstpic {
-  margin-left: 10px;
-  margin-right: 100px;
-}
-#thirdpic {
-  margin-left: 190px;
-}
-#secondpic {
-  margin-left: 40px;
-  margin-right: 40px;
 }
 #score {
   font-size: 30px;
@@ -60,6 +56,8 @@
 }
 #first {
   margin-top: 150px;
+  height: 70px;
+  width: 70px;
 }
 #footer {
   background: #485563; /* fallback for old browsers */
@@ -76,6 +74,8 @@
 }
 #second {
   margin-top: 150px;
+  height: 70px;
+  width: 70px;
 }
 #third {
   margin-top: 150px;
@@ -87,8 +87,10 @@
   font-size: 30px;
   margin-top: 50px;
 }
-.pics {
-  margin-left: 500px;
+.footer_pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .bodytext {
   font-family: "Bahiana", cursive;
