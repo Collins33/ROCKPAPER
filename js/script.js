@@ -4,7 +4,7 @@ $(document).ready(function() {
     event.preventDefault();
     var name = $("input#name").val();
     var age = parseInt($("input#age").val());
-    var year = 2017;
+    var year = new Date().getFullYear();
     if (year - age < 18) {
       swal("AGE LIMIT NOT MET", "CHANCES ARE YOU ARE TOO YOUNG");
     } else if (year - age >= 18) {
