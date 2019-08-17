@@ -1,101 +1,120 @@
-#logo{
+#logo {
   height: 100px;
   width: 100px;
   margin-left: 190px;
   margin-top: 20px;
 }
-#secondrow{
+#secondrow {
   text-align: center;
   padding-top: 20px;
   background-image: url("http://wallpaper-gallery.net/images/website-wallpaper/website-wallpaper-26.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin-left:90px;
+  margin-left: 90px;
   margin-right: 90px;
   color: white;
-  font-family: 'Frijole', cursive;
+  font-family: "Frijole", cursive;
 }
-.header{
+.header {
   font-size: 30px;
-  font-family: 'Frijole', cursive;
+  font-family: "Frijole", cursive;
 }
-#rulesrow{
-  margin-left:90px;
+#rulesrow {
+  margin-left: 90px;
   margin-right: 90px;
   border-left: inset;
   border-right: inset;
   margin-top: 90px;
   margin-bottom: 90px;
   background-color: white;
+  padding-left: 25%;
 }
-.gamepic{
+.gamepic {
   height: 250px;
   width: 250px;
 }
-#maingame{
-  margin:40px;
+#maingame {
+  margin: 40px;
   display: none;
 }
-#firstpic{
+#firstpic {
   margin-left: 10px;
   margin-right: 100px;
 }
-#thirdpic{
+#thirdpic {
   margin-left: 190px;
-
 }
-#secondpic{
+#secondpic {
   margin-left: 40px;
   margin-right: 40px;
 }
-#score{
+#score {
   font-size: 30px;
-  font-family: 'Frijole', cursive;
+  font-family: "Frijole", cursive;
   text-align: center;
 }
-#mainresult{
+#mainresult {
   display: none;
   text-align: center;
 }
-#first{
-
+#first {
   margin-top: 150px;
 }
-#footer{
-  background: #485563;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+#footer {
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#second{
+#second {
   margin-top: 150px;
 }
-#third{
+#third {
   margin-top: 150px;
 }
-#footertext{
+#footertext {
   color: white;
   text-align: center;
-  font-family: 'Frijole', cursive;
+  font-family: "Frijole", cursive;
   font-size: 30px;
   margin-top: 50px;
 }
-.pics{
+.pics {
   margin-left: 500px;
 }
-.bodytext{
-  font-family: 'Bahiana', cursive;
+.bodytext {
+  font-family: "Bahiana", cursive;
   font-size: 30px;
 }
-#header{
+#header {
   border-bottom: inset;
   margin-bottom: 10px;
   background-color: white;
 }
-body{
-  background: #283048;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.header_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

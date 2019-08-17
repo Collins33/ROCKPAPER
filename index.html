@@ -1,111 +1,165 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/sweetalert.css" rel="stylesheet" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/index.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
-  <link href="css/sweetalert.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert-dev.js"></script>
+    <script src="js/sweetalert.min.js"></script>
 
-  <script src="js/jquery-3.2.1.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/sweetalert-dev.js"></script>
-  <script src="js/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Frijole"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bahiana"
+      rel="stylesheet"
+    />
+    <title>ROCKPAPERSCISSORS</title>
+  </head>
 
-  <script src="js/script.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
-  <title>ROCKPAPERSCISSORS</title>
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="row" id="header">
-      <div class="col-md-4">
-        <img src="http://etc.usf.edu/clipart/4900/4967/c_100_md.gif" id="logo" class="animated infinite bounce" />
-
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="header">
+        <div class="col-md-4">
+          <img
+            src="http://etc.usf.edu/clipart/4900/4967/c_100_md.gif"
+            id="logo"
+            class="animated infinite bounce"
+          />
+        </div>
+        <div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/1485/0986/t/2/assets/logo.png?3724305770308888633"
+            class="header_image"
+          />
+        </div>
       </div>
-      <div class="col-md-8">
-        <img src="https://cdn.shopify.com/s/files/1/1485/0986/t/2/assets/logo.png?3724305770308888633"/>
-
+      <div class="row" id="secondrow">
+        <h2>THE GAME TO END ALL DISAGREEMENTS</h2>
+        <h2>THE GAME TO END ALL FRIENDSHIPS</h2>
+        <h2>HAVE FUN</h2>
       </div>
-    </div>
-    <div class="row" id="secondrow">
-      <h2>THE GAME TO END ALL DISAGREEMENTS</h2>
-      <h2>THE GAME TO END ALL FRIENDSHIPS</h2>
-      <h2>HAVE FUN</h2>
-    </div>
-    <div class="row" id="rulesrow">
-      <div class="col-md-4">
-        <h3 class="bodytext">CREATOR DETAILS</h3>
-        <h4 class="bodytext">COLLINS NJAU</h4>
-        <h4 class="bodytext">GITHUB:collins33</h4>
-        <h4 class="bodytext">email:collinsnjau39@gmail.com</h4>
+      <div class="row" id="rulesrow">
+        <!-- <div class="col-md-4">
+          <h3 class="bodytext">CREATOR DETAILS</h3>
+          <h4 class="bodytext">COLLINS NJAU</h4>
+          <h4 class="bodytext">GITHUB:collins33</h4>
+          <h4 class="bodytext">email:collinsnjau39@gmail.com</h4>
+        </div> -->
+        <div class="col-md-12">
+          <h4 class="bodytext">RULES</h4>
+          <ol>
+            <li class="bodytext">You must be 18 and above</li>
+            <li class="bodytext">You must not be suicidal</li>
+            <li class="bodytext">Click on either rock paper or scissors</li>
+          </ol>
+          <img
+            src="http://elementarypegames.weebly.com/uploads/1/5/0/1/15014218/6869625_orig.gif"
+          />
+        </div>
+        <div>
+          <button
+            class="btn btn-info btn-lg"
+            data-toggle="modal"
+            data-target="#firstmodal"
+            type="button"
+          >
+            PROCEED
+          </button>
+        </div>
       </div>
-      <div class="col-md-8">
-        <h4 class="bodytext">RULES</h4>
-        <ol>
-          <li class="bodytext">YOU MUST BE 18 AND ABOVE TO PLAY</li>
-          <li class="bodytext">YOU MUST NOT BE SUICIDAL</li>
-          <li class="bodytext">CLICK ON EITHER ROCK PAPER SCISSORS PHOTO</li>
-          <li><img src="http://elementarypegames.weebly.com/uploads/1/5/0/1/15014218/6869625_orig.gif" /></li>
-        </ol>
-         <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#firstmodal" type="button">PROCEED</button>
+      <div class="row" id="maingame">
+        <img
+          src="https://s-media-cache-ak0.pinimg.com/originals/44/0e/f1/440ef1ab91e5cbbc6fabb8171d1f705c.jpg"
+          class="well well lg gamepic"
+          id="firstpic"
+        />
+        <img
+          src="https://4.bp.blogspot.com/-g0a99Xo-GWQ/Vxjzf78S8II/AAAAAAACAEw/FZrDlrIs478Hhj-yvMDAug8ODUm-XvNfwCKgB/s0/Paper_Boat_by_MiguelP_uhd.jpg"
+          class="well well lg gamepic"
+          id="secondpic"
+        />
+        <img
+          src="http://images.clipartpanda.com/scissors-clip-art-1388423321.png"
+          class="well well lg gamepic"
+          id="thirdpic"
+        />
       </div>
-    </div>
-    <div class="row" id="maingame">
-      <img src="https://s-media-cache-ak0.pinimg.com/originals/44/0e/f1/440ef1ab91e5cbbc6fabb8171d1f705c.jpg" class="well well lg gamepic" id="firstpic"/>
-      <img src="https://4.bp.blogspot.com/-g0a99Xo-GWQ/Vxjzf78S8II/AAAAAAACAEw/FZrDlrIs478Hhj-yvMDAug8ODUm-XvNfwCKgB/s0/Paper_Boat_by_MiguelP_uhd.jpg" class="well well lg gamepic" id="secondpic"/>
-      <img src="http://images.clipartpanda.com/scissors-clip-art-1388423321.png" class="well well lg gamepic" id="thirdpic"/>
+      <div class="row" id="mainresult">
+        <h3>YOU CHOSE: <span id="choice1"></span></h3>
+        <h3>COMPUTER CHOICE: <span id="choice2"></span></h3>
+        <p id="score">
+          <span id="playername"> </span> <span id="playerscore"></span> ----
+          <span id="computerscore"></span> computer
+        </p>
+      </div>
+      <div class="row" id="footer">
+        <p id="footertext">KEEP ENJOYING THE GAME</p>
+        <div class="pics">
+          <a href="https://www.tumblr.com/login"
+            ><img
+              src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/tumblr-64.png"
+              id="first"
+          /></a>
+          <a href="https://wordpress.com/"
+            ><img
+              src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/wordpress-64.png"
+              id="second"
+          /></a>
+          <a href="https://slack.com/"
+            ><img
+              src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/slack-64.png"
+              id="third"
+          /></a>
+        </div>
+      </div>
 
-    </div>
-    <div class="row" id="mainresult">
-      <h3>YOU CHOSE: <span id="choice1"></span></h3>
-      <h3>COMPUTER CHOICE: <span id="choice2"></span></h3>
-      <p id="score"><span id="playername"> </span>  <span id="playerscore"></span>  ----   <span id="computerscore"></span> computer</p>
-    </div>
-    <div class="row" id="footer">
-      <p id="footertext">KEEP ENJOYING THE GAME</p>
-    <div class="pics">
-      <a href="https://www.tumblr.com/login"><img src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/tumblr-64.png" id="first"/></a>
-      <a href="https://wordpress.com/"><img src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/wordpress-64.png" id="second"/></a>
-      <a href="https://slack.com/"><img src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/slack-64.png" id="third"/></a>
-    </div>
-    </div>
-
-    <div id="firstmodal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"></button>
-            <h4 class="modal-title">PLAYER FORM</h4>
-          </div>
-          <div class="modal-body">
-            <h2>FILL TO REGISTER</h2>
-            <form id="playerinfo">
-              <div class="form-group">
-                <label>ENTER YOUR NAME</label>
-                <input type="text" class="form-control" id="name" />
-              </div>
-              <div class="form-group">
-                <label>ENTER YOUR year of birth</label>
-                <input type="number" class="form-control" id="age" />
-              </div>
-              <button class="btn" type="submit">GIVE INFO</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <div id="firstmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"></button>
+              <h4 class="modal-title">PLAYER FORM</h4>
+            </div>
+            <div class="modal-body">
+              <h2>FILL TO REGISTER</h2>
+              <form id="playerinfo">
+                <div class="form-group">
+                  <label>ENTER YOUR NAME</label>
+                  <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                  <label>ENTER YOUR year of birth</label>
+                  <input type="number" class="form-control" id="age" />
+                </div>
+                <button class="btn" type="submit">GIVE INFO</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
