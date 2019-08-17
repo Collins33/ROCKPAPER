@@ -120,3 +120,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.play_again_button_row {
+  display: none;
+}
+.play_again_button {
+  margin-left: 600px;
+}

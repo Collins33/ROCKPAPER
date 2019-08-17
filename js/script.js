@@ -7,7 +7,7 @@ $(document).ready(function() {
     var year = 2017;
     if (year - age < 18) {
       swal("AGE LIMIT NOT MET", "CHANCES ARE YOU ARE TOO YOUNG");
-    } else if (year - age > 18) {
+    } else if (year - age >= 18) {
       $(".maingame_row").show();
       $(".proceed_button").hide();
       $("#mainresult").show();
@@ -67,6 +67,14 @@ $(document).ready(function() {
     $("#computerscore").text("");
     $("#computerscore").append(computerscore);
   };
+  var playAgain = function() {
+    $("#play_again_button_row").show();
+  };
+  var resetGame = function() {
+    $("#maingame").show();
+    $("#playerscore").text("");
+    $("#computerscore").text("");
+  };
   var verdict = function() {
     if (computerscore >= 30) {
       swal({
@@ -76,6 +84,7 @@ $(document).ready(function() {
           "http://i.huffpost.com/gen/2714370/images/o-POOP-EMOJI-ICE-CREAM-facebook.jpg"
       });
       $("#maingame").hide();
+      playAgain();
     } else if (userscore >= 30) {
       swal({
         title: "Sweet!!!!!!",
@@ -83,8 +92,8 @@ $(document).ready(function() {
         imageUrl:
           "https://thumbs.dreamstime.com/z/thumbs-up-emoticon-vector-design-showing-73992493.jpg"
       });
-
       $("#maingame").hide();
+      playAgain();
     }
   };
   /*click function for pictures and random number generator for computer*/
@@ -108,5 +117,11 @@ $(document).ready(function() {
     comparison();
     results();
     verdict();
+  });
+
+  $("#play_game_again").click(function() {
+    userscore = 0;
+    computerscore = 0;
+    resetGame();
   });
 });
